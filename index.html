@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No-Code Algo Trading Carousel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      min-width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+      box-sizing: border-box;
+      background: linear-gradient(145deg, #0a0e1a, #1a1f33);
+      position: relative;
+    }
+
+    .text {
+      flex: 1;
+      max-width: 50%;
+    }
+
+    h1, h2 {
+      font-size: 2.4rem;
+      line-height: 1.3;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #FFD700; /* golden headings */
+    }
+
+    span {
+      color: #FFD700; /* golden highlight */
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #FFD700;
+      font-size: 1.4rem;
+    }
+
+    .cta {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #FFD700;
+    }
+
+    .illustration {
+      flex: 1;
+      max-width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .illustration svg {
+      width: 85%;
+      height: auto;
+    }
+
+    /* Golden connector style */
+    .connector {
+      position: absolute;
+      right: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: auto;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+
+    <!-- Slide 1 -->
+    <div class="slide">
+      <div class="text">
+        <h1>🚀 What is <span>No-Code Algo Trading?</span></h1>
+        <p><b>No-Code Algo Trading</b> lets you design and deploy trading bots <span>without writing code</span>. 
+        Imagine building strategies like assembling LEGO — drag, drop, and connect blocks visually.</p>
+        <ul>
+          <li>⚡ Build strategies faster</li>
+          <li>📊 Focus on trading ideas, not syntax</li>
+          <li>🛠 Test instantly before going live</li>
+        </ul>
+        <div class="cta">✨ The future of trading is visual.</div>
+      </div>
+      <div class="illustration">
+        <!-- Bot Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <circle cx="32" cy="20" r="12" fill="#FFD700"/>
+          <rect x="20" y="34" width="24" height="20" rx="4" fill="#FFD700"/>
+          <circle cx="24" cy="44" r="3" fill="#0a0e1a"/>
+          <circle cx="40" cy="44" r="3" fill="#0a0e1a"/>
+        </svg>
+      </div>
+      <div class="connector">
+        <!-- Connector 1: Wave -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40">
+          <defs>
+            <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FFD700"/>
+              <stop offset="100%" stop-color="#FFB700"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 20 Q40 0, 80 20 Q40 40, 0 20 Z" fill="url(#gold-gradient)"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div class="text">
+        <h2>1️⃣ The Problem</h2>
+        <p>Traditional algo trading is <span>complex</span>:</p>
+        <ul>
+          <li>💻 Requires Python or coding skills</li>
+          <li>🔌 API setup & integrations</li>
+          <li>🐞 Debugging endless errors</li>
+          <li>⏳ Weeks before testing live</li>
+        </ul>
+        <p>Result? Most traders never bring their ideas to life.</p>
+      </div>
+      <div class="illustration">
+        <!-- Buggy code cartoon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="12" y="12" width="40" height="40" rx="6" fill="#FFD700"/>
+          <line x1="20" y1="24" x2="44" y2="24" stroke="#0a0e1a" stroke-width="3"/>
+          <line x1="20" y1="34" x2="44" y2="34" stroke="#0a0e1a" stroke-width="3"/>
+          <line x1="20" y1="44" x2="36" y2="44" stroke="#0a0e1a" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="connector">
+        <!-- Connector 2: Zigzag -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40">
+          <path d="M0 30 L20 10 L40 30 L60 10 L80 30" stroke="url(#gold-gradient)" stroke-width="4" fill="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div class="text">
+        <h2>2️⃣ The Solution</h2>
+        <p>No-Code platforms let you:</p>
+        <ul>
+          <li>🛠 Drag & drop trading indicators</li>
+          <li>📋 Define rules visually</li>
+          <li>📊 Backtest instantly</li>
+          <li>🚀 Deploy to live markets</li>
+        </ul>
+        <p><span>Build → Test → Deploy</span> with zero code.</p>
+      </div>
+      <div class="illustration">
+        <!-- Flowchart -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <rect x="10" y="10" width="18" height="12" fill="#FFD700"/>
+          <rect x="36" y="10" width="18" height="12" fill="#FFD700"/>
+          <rect x="23" y="30" width="18" height="12" fill="#FFD700"/>
+          <line x1="19" y1="22" x2="32" y2="30" stroke="#fff" stroke-width="2"/>
+          <line x1="45" y1="22" x2="32" y2="30" stroke="#fff" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="connector">
+        <!-- Connector 1: Wave -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40">
+          <path d="M0 20 Q40 0, 80 20 Q40 40, 0 20 Z" fill="url(#gold-gradient)"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <div class="text">
+        <h2>3️⃣ How It Works</h2>
+        <p>Just 4 simple steps:</p>
+        <ul>
+          <li>📈 Pick indicators</li>
+          <li>📝 Define signals visually</li>
+          <li>📊 Backtest with historical data</li>
+          <li>💹 Deploy live in markets</li>
+        </ul>
+        <p>It’s like <span>Canva for trading strategies</span>.</p>
+      </div>
+      <div class="illustration">
+        <!-- Chart -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <line x1="10" y1="54" x2="54" y2="54" stroke="#FFD700" stroke-width="3"/>
+          <polyline points="10,40 20,30 30,35 40,20 54,25" fill="none" stroke="#FFD700" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="connector">
+        <!-- Connector 2: Zigzag -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="40" viewBox="0 0 80 40">
+          <path d="M0 30 L20 10 L40 30 L60 10 L80 30" stroke="url(#gold-gradient)" stroke-width="4" fill="none"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <div class="text">
+        <h2>4️⃣ Build Your First Bot</h2>
+        <p>🔥 Example: <span>RSI Crossover Strategy</span></p>
+        <ul>
+          <li>RSI &lt; 30 → Buy</li>
+          <li>RSI &gt; 70 → Sell</li>
+        </ul>
+        <p>In code: 20+ lines  
+        In no-code: just 2 drag-and-drops ✅</p>
+        <div class="cta">💬 Comment “GUIDE” for a demo</div>
+      </div>
+      <div class="illustration">
+        <!-- Rocket -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <polygon points="32,4 40,20 32,28 24,20" fill="#FFD700"/>
+          <rect x="28" y="28" width="8" height="20" fill="#FFD700"/>
+          <polygon points="24,48 40,48 32,60" fill="orange"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
