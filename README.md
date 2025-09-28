@@ -16,13 +16,6 @@ The carousel is designed using HTML + CSS and styled with a golden/black theme f
 
 🧑‍💻 Explains algo trading concepts in simple language
 
-📌 Assignment Deliverables
-
-Carousel (index.html) → Hosted on GitHub Pages
-
-30-sec explainer script → Separate text file (e.g. explainer.txt)
-
-Newsletter snippet → Separate text file (e.g. newsletter.txt)
 
 👨‍💻 How to Run Locally
 
